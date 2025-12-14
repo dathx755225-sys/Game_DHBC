@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đuổi Hình Bắt Chữ - Vận Tải</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>ĐUỔI HÌNH BẮT CHỮ: VẬN TẢI ĐƯỜNG BỘ</h1>
+        <div id="score-board">Điểm: 0</div>
+
+        <div id="question-container">
+            </div>
+
+        <div id="input-area">
+            <input type="text" id="answer-input" placeholder="Nhập đáp án của bạn...">
+            <button onclick="checkAnswer()">Kiểm Tra</button>
+            <button onclick="showHint()">Gợi Ý</button>
+        </div>
+        
+        <div id="result-message"></div>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Câu Tiếp Theo</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#score-board {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+#question-container {
+    margin-bottom: 25px;
+}
+
+.image-set {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.image-item {
+    width: 45%; /* Chia đều cho 2 hình */
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+#hint-text {
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+#input-area {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#answer-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Định dạng các nút */
+#input-area button:nth-child(2) { /* Kiểm Tra */
+    background-color: #007bff;
+    color: white;
+}
+
+#input-area button:nth-child(3) { /* Gợi Ý */
+    background-color: #6c757d;
+    color: white;
+}
+
+#next-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+#result-message {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
